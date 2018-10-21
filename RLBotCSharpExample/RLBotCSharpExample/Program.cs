@@ -13,7 +13,8 @@ namespace RLBotCSharpExample
             int port = int.Parse(text);
 
             // BotManager is a generic which takes in your bot as its T type.
-            BotManager<ExampleBot> botManager = new BotManager<ExampleBot>();
+            BotManager<SteveThePirBot> botManager = new BotManager<SteveThePirBot>();
+            //BotManager<ExampleBot> botManager = new BotManager<ExampleBot>();
             // Start the server on the port given in the port.cfg file.
             botManager.Start(port);
         }
